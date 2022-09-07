@@ -1,0 +1,26 @@
+.pad-header {
+    color: #d6a05a;
+    padding: 30px;
+}
+
+.dev-style {
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.nav-color {
+    background-color: rgb(74, 48, 83);
+}
+
+.text-color {
+    color: white;
+}
+
+.back-color-app {
+    background-color: rgb(63, 36, 72);
+}
+
+.search-back-ground {
+    background-color: rgb(63, 36, 72);
+}
