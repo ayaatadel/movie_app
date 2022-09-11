@@ -47,6 +47,12 @@
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
+                            {{-- ////////////////////////////////////////// --}}
+                            <x-dropdown-link :href="route('logout')"
+                                onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Profile') }}
+                            </x-dropdown-link>
                         </form>
                     </x-slot>
                 </x-dropdown>
@@ -93,6 +99,11 @@
                                         this.closest('form').submit();">
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
+                    {{-- //////////////////////////////////////////////////////////////////////////// --}}
+                    <x-dropdown-link :href="route('logout')"
+                        onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                        {{ __('Profile') }}
                 </form>
             </div>
         </div>

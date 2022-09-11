@@ -43,8 +43,8 @@
         }
 
         a {
-            color: inherit;
-            text-decoration: inherit
+            color: white;
+            text-decoration: white
         }
 
         svg,
@@ -66,7 +66,8 @@
 
         .bg-gray-100 {
             --bg-opacity: 1;
-            background-color: #232256;
+            background-color: rgb(63, 36, 72);
+
             /* background-color: rgba(247, 250, 252, var(--bg-opacity)) */
         }
 
@@ -413,11 +414,11 @@
                     <a href="{{ url('/dashboard') }}"
                         class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                 @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                    <a href="{{ route('login') }}" class="text-sm text-gray-300  dark:text-gray-300  underline">Log in</a>
 
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
-                            class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                            class="ml-4 text-sm text-gray-300  dark:text-gray-300  underline">Register</a>
                     @endif
                 @endauth
             </div>

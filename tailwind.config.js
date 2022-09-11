@@ -7,13 +7,13 @@ module.exports = {
         "./resources/**/*.vue",
     ],
 
-    // theme: {
-    //     extend: {
-    //         fontFamily: {
-    //             sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-    //         },
-    //     },
-    // },
+    theme: {
+        extend: {
+            width: {
+                '96': '24rem'
+            },
+        },
+    },
 
     // plugins: [require('@tailwindcss/forms')],
 };
