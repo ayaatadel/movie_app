@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }" class=" nav-color border-b border-gray-100">
     {{-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> --}}
     {{-- <div class="nav-color"> --}}
-    <div class="container px-4 flex flex-col md:flex-row items-center px-4 py-6  nav-color " style="width:85%;">
+    <div class="container px-4 flex flex-col md:flex-row items-center px-4 py-6  nav-color " style="width:95%;">
         {{-- <div class="dev-style"> --}}
         <ul class="flex  flex-col md:flex-row  px-4 py-6 items-center dev-style">
             {{-- Logo --}}
@@ -21,7 +21,7 @@
             <li class="md:ml-6 mt-3 md:mt-0">
                 <a href="#" class="text-color ml-12">TvShows</a>
             </li>
-            <li class="md:ml-6 mt-3 md:mt-0">
+            <li class="md:ml-6 mr:16 mt-3 md:mt-0">
                 <a href="#" class="text-color ml-12">Actors</a>
             </li>
 
@@ -31,7 +31,7 @@
         <div class="flex flex-col md:flex-row items-center">
             <div class="relative mt-3 md:mt-0 ">
                 <input type="text"
-                    class=" background-color: rgb(63, 36, 72); textcolor rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
+                    class=" background-color: rgb(63, 36, 72); textcolor rounded-full w-64 px-4 pl-8 py-1 ml:10 focus:outline-none focus:shadow-outline"
                     placeholder="Search">
                 <div class="absolute top-0">
                     <svg class="fill-current text-gray-500 ml-2" fill="#000000" xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@
             <div class="md:ml-4  mt-3 md:mt-0  ">
                 <a href="#">
 
-                    <img src="/img/avatar.jpg" class="rounded-full w-8 h-8">
+                    <img src="/img/avatar.jpg" class="rounded-full  pl-5 w-8 h-8">
                 </a>
 
             </div>

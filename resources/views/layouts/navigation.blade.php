@@ -104,6 +104,7 @@
                         onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                         {{ __('Profile') }}
+                    </x-dropdown-link>
                 </form>
             </div>
         </div>

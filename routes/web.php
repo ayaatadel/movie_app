@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Routing\Route as RoutingRoute;
-use Illuminate\Support\Facades\Route;
 use PhpParser\Node\Stmt\Return_;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MoviesController;
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,16 +19,20 @@ use PhpParser\Node\Stmt\Return_;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('index', [MoviesController::class, 'index'])->name('movie.index');
+Route::get('index', [MoviesController::class, 'index'])->name('movie.index');
 
-Route::get('index', function () {
-    return view('index');
-});
+// Route::get('index', 'MoviesController@index')->name('movies.index');
+// Route::get('/movies/{movie}', 'MoviesController@show')->name('movie.show');
+// Route::get('index', function () {
+//     return view('index');
+// });
 Route::get("show", function () {
     return view('layouts.show');
 });
-Route::get('profile', function () {
-    return view('index');
-});
+// Route::get('profile', function () {
+//     return view('index');
+// });
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
