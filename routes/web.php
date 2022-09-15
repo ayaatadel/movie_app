@@ -20,9 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('index', [MoviesController::class, 'index'])->name('movie.index');
-Route::get('index', [MoviesController::class, 'index'])->name('movie.index');
+Route::get('/movies/{movie}', [MoviesController::class, 'show'])->name('movie.show');
 
-// Route::get('index', 'MoviesController@index')->name('movies.index');
 // Route::get('/movies/{movie}', 'MoviesController@show')->name('movie.show');
 // Route::get('index', function () {
 //     return view('index');
