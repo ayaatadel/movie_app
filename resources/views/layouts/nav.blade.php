@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class=" nav-color border-b border-gray-100">
+<nav class=" nav-color border-b border-gray-100">
 
     <div class="container px-4 flex flex-col md:flex-row items-center px-4 py-6  nav-color justify-around">
 
@@ -28,25 +28,14 @@
         </ul>
         {{-- search --}}
         <div class="flex flex-col md:flex-row items-center">
-            <div class="relative mt-3 md:mt-0 ">
-                <input type="text"
-                    class=" background-color: rgb(63, 36, 72); textcolor rounded-full w-64 px-4 pl-8 py-1 ml:10 focus:outline-none focus:shadow-outline"
-                    placeholder="Search">
-                <div class="absolute top-0">
-                    <svg class="fill-current text-gray-500 ml-2" fill="#000000" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 30 30" width="25px" height="30px">
-                        <path
-                            d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z" />
-                    </svg>
+            <livewire:search-dropdown>
+                <div class="md:ml-4  mt-3 md:mt-0  ">
+                    <a href="#">
+
+                        <img src="/img/avatar.jpg" class="rounded-full w-8 h-8">
+                    </a>
+
                 </div>
-            </div>
-            <div class="md:ml-4  mt-3 md:mt-0  ">
-                <a href="#">
-
-                    <img src="/img/avatar.jpg" class="rounded-full w-8 h-8">
-                </a>
-
-            </div>
         </div>
     </div>
 </nav>

@@ -17,6 +17,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <livewire:styles />
+    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 
 <body class="font-sans antialiased">
@@ -25,4 +27,5 @@
 
         @yield('content')
     </div>
+    <livewire:scripts />
 </body>

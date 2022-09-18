@@ -32,3 +32,6 @@
 .bg-button {
     background-color: #ef8d0d;
 }
+.spinner{
+    position: absolute;
+}

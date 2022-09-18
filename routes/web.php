@@ -22,10 +22,7 @@ Route::get('/', function () {
 Route::get('index', [MoviesController::class, 'index'])->name('movie.index');
 Route::get('/movies/{movie}', [MoviesController::class, 'show'])->name('movie.show');
 
-// Route::get('/movies/{movie}', 'MoviesController@show')->name('movie.show');
-// Route::get('index', function () {
-//     return view('index');
-// });
+
 Route::get("show", function () {
     return view('layouts.show');
 });
