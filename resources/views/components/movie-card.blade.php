@@ -1,7 +1,6 @@
 <div class="mt-8">
     <a href="{{ route('movie.show', $movie['id']) }}">
-        <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $movie['poster_path'] }}" alt="poster"
-            class="hover:opactiy-75 transition ease-in-out duration-150">
+        <img src="{{ $movie['poster_path'] }}" alt="poster" class="hover:opactiy-75 transition ease-in-out duration-150">
     </a>
     <div class="mt-2 text-color text-sm">
         <a href="{{ route('movie.show', $movie['id']) }}" class="text-lg mt-2 show-color">{{ $movie['title'] }} </a>
@@ -13,15 +12,12 @@
                         data-name="star" />
                 </g>
             </svg>
-            <span class="text-color ml-1 "> {{ $movie['vote_average'] * 10 . '%' }}</span>
+            <span class="text-color ml-1 "> {{ $movie['vote_average'] }}</span>
             <span class="text-color ml-1">|</span>
-            <span class="text-color ml-1">{{ \Carbon\Carbon::parse($movie['release_date'])->format('M d,Y') }}</span>
+            <span class="text-color ml-1">{{ $movie['release_date'] }}</span>
         </div>
         <div class="text-color">
-            @foreach ($movie['genre_ids'] as $genre)
-                {{ $genres->get($genre) }}
-                @if(!$loop->last),@endif
-            @endforeach
+            {{ $movie['genres'] }}
         </div>
     </div>
 </div>
