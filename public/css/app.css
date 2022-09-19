@@ -566,6 +566,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -665,6 +669,9 @@ video {
 .h-6 {
   height: 1.5rem;
 }
+.h-full {
+  height: 100%;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -703,6 +710,9 @@ video {
 }
 .max-w-6xl {
   max-width: 72rem;
+}
+.flex-none {
+  flex: none;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -780,6 +790,9 @@ video {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
 }
 .rounded-lg {
   border-radius: 0.5rem;
@@ -861,6 +874,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
 }
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
 .fill-current {
   fill: currentColor;
 }
@@ -925,6 +942,10 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pt-16 {
   padding-top: 4rem;
@@ -998,6 +1019,10 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .font-semibold {
   font-weight: 600;
 }
@@ -1015,6 +1040,9 @@ video {
 }
 .leading-5 {
   line-height: 1.25rem;
+}
+.leading-none {
+  line-height: 1;
 }
 .tracking-wider {
   letter-spacing: 0.05em;
@@ -1073,6 +1101,10 @@ video {
 .text-indigo-700 {
   --tw-text-opacity: 1;
   color: rgb(67 56 202 / var(--tw-text-opacity));
+}
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -1228,6 +1260,13 @@ video {
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.hover\:text-gray-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+.hover\:opacity-75:hover {
+  opacity: 0.75;
 }
 .focus\:border-indigo-300:focus {
   --tw-border-opacity: 1;
@@ -1457,6 +1496,10 @@ video {
 }
 @media (min-width: 1024px) {
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -1464,6 +1507,11 @@ video {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
