@@ -48,19 +48,19 @@ class ViewMoviesTest extends TestCase
     }
 
 
-       /** @test */
-       public function the_search_dropdown_works_correctly()
-       {
-           Http::fake([
-               'https://api.themoviedb.org/3/search/movie?query=jumanji' => $this->fakeSearchMovies(),
-           ]);
+    /** @test */
+    public function the_search_dropdown_works_correctly()
+    {
+        Http::fake([
+            'https://api.themoviedb.org/3/search/movie?query=jumanji' => $this->fakeSearchMovies(),
+        ]);
 
-           Livewire::test('search-dropdown')
-               ->assertDontSee('jumanji')
-               ->set('search', 'jumanji')
-               ->assertSee('Jumanji');
-       }
-    private function fakeSearchMovies()
+        Livewire::test('search-dropdown')
+            ->assertDontSee('jumanji')
+            ->set('search', 'jumanji')
+            ->assertSee('Jumanji');
+    }
+    public function fakeSearchMovies()
     {
         return Http::response([
             'results' => [
@@ -90,7 +90,7 @@ class ViewMoviesTest extends TestCase
         ], 200);
     }
 
-    private function fakePopularMovies()
+    public function fakePopularMovies()
     {
         return Http::response([
             'results' => [
@@ -120,7 +120,7 @@ class ViewMoviesTest extends TestCase
         ], 200);
     }
 
-    private function fakeNowPlayingMovies()
+    public function fakeNowPlayingMovies()
     {
         return Http::response([
             'results' => [

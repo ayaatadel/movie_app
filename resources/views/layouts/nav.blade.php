@@ -21,7 +21,7 @@
                 <a href="#" class="text-color ml-12">TvShows</a>
             </li>
             <li class="md:ml-6 mr:16 mt-3 md:mt-0">
-                <a href="#" class="text-color ml-12">Actors</a>
+                <a href="{{ route('actors.index') }}" class="text-color ml-12">Actors</a>
             </li>
 
 

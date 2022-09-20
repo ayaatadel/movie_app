@@ -28,4 +28,5 @@
         @yield('content')
     </div>
     <livewire:scripts />
+    @yield('scripts')
 </body>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActorsController;
 use PhpParser\Node\Stmt\Return_;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MoviesController;
@@ -23,12 +24,14 @@ Route::get('index', [MoviesController::class, 'index'])->name('movie.index');
 Route::get('/movies/{movie}', [MoviesController::class, 'show'])->name('movie.show');
 
 
-Route::get("show", function () {
-    return view('layouts.show');
-});
-// Route::get('profile', function () {
-//     return view('index');
-// });
+Route::get('actor', [ActorsController::class, 'index'])->name('actors.index');
+
+
+Route::get('actor/page/{page?}', [ActorsController::class, 'index']);
+Route::get('actor/{actor}', [ActorsController::class, 'show'])->name('actors.show');
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
