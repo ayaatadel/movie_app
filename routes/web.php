@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ActorsController;
 use PhpParser\Node\Stmt\Return_;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TvController;
+use App\Http\Controllers\ActorsController;
 use App\Http\Controllers\MoviesController;
 use Illuminate\Routing\Route as RoutingRoute;
 
@@ -21,14 +22,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('index', [MoviesController::class, 'index'])->name('movie.index');
-Route::get('/movies/{movie}', [MoviesController::class, 'show'])->name('movie.show');
+Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('movie.show');
+
+
+Route::get('/tv', [TvController::class, 'index'])->name('tv.index');
+Route::get('/tv/{id}', [TvController::class, 'show'])->name('tv.show');
 
 
 Route::get('actor', [ActorsController::class, 'index'])->name('actors.index');
 
 
 Route::get('actor/page/{page?}', [ActorsController::class, 'index']);
-Route::get('actor/{actor}', [ActorsController::class, 'show'])->name('actors.show');
+Route::get('actor/{id}', [ActorsController::class, 'show'])->name('actors.show');
 
 
 

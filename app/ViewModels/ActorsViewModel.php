@@ -11,10 +11,12 @@ class ActorsViewModel extends ViewModel
     public $page;
 
 
+
     public function __construct($popularActors, $page)
     {
         $this->popularActors = $popularActors;
         $this->page = $page;
+
     }
     public function popularActors()
     {
